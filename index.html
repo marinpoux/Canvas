@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bateau Olympique</title>
+        <meta charset="utf-8"/>
+        <link rel="shortcut icon" type="image/x-icon" href="./images/aubergine.png" />
+        <link rel="stylesheet" href="./css/cssTemplate.css" />
+    </head>
+    <body>
+
+        <canvas id="canvasBateau" width="400" height="400" style="border:1px dotted grey;"></canvas>
+        
+        <script type="text/javascript">
+            var canvas = document.getElementById("canvasBateau");
+            var ctx = canvas.getContext("2d");
+            ctx.moveTo(150,80);
+            ctx.lineTo(300,230);
+            ctx.lineTo(150,230);
+            ctx.fillStyle="lightblue";
+            ctx.fill();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.moveTo(50,250);
+            ctx.lineTo(100,300);
+            ctx.lineTo(250,300);
+            ctx.lineTo(300,250);
+            ctx.fillStyle="peru";
+            ctx.fill();
+            ctx.lineWidth=10;
+            ctx.strokeStyle="sienna";
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.lineWidth=10;
+            ctx.strokeStyle="sienna";
+            ctx.moveTo(140,50);
+            ctx.lineTo(140,250);
+            ctx.stroke();
+            ctx.closePath();
+            ;
+
+        </script>
+
+
+        <canvas id="canvasJO" width="400" height="200" style="border:1px dotted grey;"></canvas>
+        
+        <script type="text/javascript">
+            var canvas = document.getElementById("canvasJO");
+            var ctx = canvas.getContext("2d");
+           
+            ctx.lineWidth=10;
+
+            ctx.beginPath();
+            ctx.arc(canvas.width/5, canvas.height/3, 50, 0, 2*Math.PI);
+            ctx.strokeStyle = "blue";
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(2.5*(canvas.width/5), canvas.height/3, 50, 0, 2*Math.PI);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(4*(canvas.width/5), canvas.height/3, 50, 0, 2*Math.PI);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+            ctx.closePath();
+            
+            ctx.beginPath();
+            ctx.arc((canvas.width/3), 2*(canvas.height/3), 50, 0, 2*Math.PI);
+            ctx.strokeStyle = "yellow";
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(2*(canvas.width/3), 2*(canvas.height/3), 50, 0, 2*Math.PI);
+            ctx.strokeStyle = "green";
+            ctx.stroke();
+            ctx.closePath();
+            
+
+            
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+        <p></p>
+
+
+        <footer>
+            Marine Schwartz - 2019
+        </footer>
+    </body>
+</html>
