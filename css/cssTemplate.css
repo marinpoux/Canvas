@@ -4,7 +4,26 @@ body {
     text-justify: auto;
     margin: 5%;
 }
-header {}
+
+head {
+    padding-bottom: 100px;
+}
+
+header p {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+#aubergineD {
+    float: right;
+    height: 50px;
+    width: auto;
+    top: 10px;
+    padding-bottom: 100px;
+    left: 50%;
+}
 
 h1 {}
 p {}
@@ -26,4 +45,7 @@ footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: medium;
     font-style: italic;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
 }
